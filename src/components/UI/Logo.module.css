@@ -1,0 +1,12 @@
+.container {
+    display: block;
+    width: 90%;
+    margin: 2rem auto;
+    max-width: 40rem;
+    font-family: Oxygen, 'Cormorant Garamond', sans-serif;
+    letter-spacing: 4px;
+}
+.pint {
+    font-size: small;
+
+}
