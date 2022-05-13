@@ -1,4 +1,7 @@
 
+.small {
+  font-size: smaller;
+}
 .input {
     margin: 2rem auto;
     padding: 1rem;

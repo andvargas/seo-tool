@@ -30,12 +30,13 @@ const AddUrl = props => {
     const shortenedHandler = (event) => {
         setShortenedUrl(enteredUrl);
     }
-    const length = enteredUrl.length + baseUrl.length
+    const length = enteredUrl.length + (baseUrl.length || 0)
 
     const addBaseUrl = () => {
         let baseUrlPrompt = prompt ('Please enter the base url - everything before the slug')
-        setBaseUrl(baseUrlPrompt)
+        if (baseUrlPrompt !== null) setBaseUrl(baseUrlPrompt)
     }
+    console.log(addBaseUrl)
 
     return (
         <Card className={classes.input}>
@@ -50,7 +51,7 @@ const AddUrl = props => {
             
             <form  onSubmit={trimHandler}>
                 <label htmlFor='inputurl'>Add Url to trim | <span className={length < 75 ? classes.valid : classes.invalid}>Characters: {length}</span></label>
-                <textarea id='inputurl' onChange={urlChangeHandler} value={enteredUrl}></textarea>
+                <textarea id='inputurl' onChange={urlChangeHandler} value={enteredUrl} placeholder="Copy & paste your url to check length... or add base url above"></textarea>
                 <label htmlFor='outputurl'>Slug (trimmed)</label>
                 <textarea id='outputurl' onChange={shortenedHandler} value={shortenedUrl} readOnly></textarea>
                 <Button type='submit'>Trim to size</Button>

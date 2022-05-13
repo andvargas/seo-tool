@@ -33,11 +33,7 @@ const AddTitle = props => {
         }
         //return string.join('')
     }
-    
 
-    // const shortenedHandler = (event) => {
-    //     setShortenedUrl(enteredUrl);
-    // }
 
     function getTextWidth(text) {
         const canvas = document.createElement('canvas');
@@ -56,6 +52,7 @@ const AddTitle = props => {
                 Title pixel-length SEO tester tool
             </h1>
             <h5>Google typically displays the first 600 pixels of the title tag. If you keep your titles under 600 pixels wide, our research suggests that you can expect about 90% of your titles to display properly in the SERPs.</h5>
+            
             <form  onSubmit={trimHandler}>
                 <label htmlFor='inputurl'>Add Title to trim | <span className={length < 600 && length > 200 ? classes.valid : classes.invalid }>Pixels: {Math.round(length)}</span> <span style={{float:'right'}} className={(length > 200 || !touched ? (length > 600 ? classes.invalid : classes.hidden) : classes.invalid)}> <BsFillExclamationTriangleFill /> {errMessage}</span></label>
                 <textarea id='inputurl' onChange={titleChangeHandler} value={enteredTitle}></textarea>

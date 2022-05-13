@@ -10,3 +10,7 @@
     font-size: small;
 
 }
+.container a {
+    color: #800020;
+    text-decoration: none;
+}

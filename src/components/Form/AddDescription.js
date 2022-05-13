@@ -53,6 +53,7 @@ const AddDescription = props => {
                 Meta description pixel-length tester
             </h1>
             <h5>Based on the width of Google's desktop search results, your meta description tags should be kept between 400 and 928 pixel width. In order to be displayed properly in the SERPs,  it's best to keep meta descriptions long enough that they're sufficiently descriptive.</h5>
+            <p className={classes.small}>On the Airsquare e-commerce platform the title tag is identical to the "Short Summary" field (on each product page)</p>
             <form  onSubmit={trimHandler}>
                 <label htmlFor='inputurl'>Add meta description to trim | <span className={length < 928 && length > 400 ? classes.valid : classes.invalid}>Pixels: {Math.round(length)}</span> <span style={{float:'right'}} className={(length > 400 || !touched ? (length > 928 ? classes.invalid : classes.hidden) : classes.invalid)}> <BsFillExclamationTriangleFill /> {errMessage}</span></label>
                 <textarea id='inputurl' rows='5' onChange={titleChangeHandler} value={enteredTitle}></textarea>
