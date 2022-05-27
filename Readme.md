@@ -41,4 +41,8 @@ The single page app doesn't have a database connection, no data is being stored.
 - When Trim to size is not clicked, Copy slug would still work and would copy the above field "Add Url to trim"
 - Made the "Slug trimmed" field writable so we can further trim to adjust the slug before copying.
 
+## Version 0.1.3
+
+- Corrected "Trim to size" length
+
 Created by [Andras Vargyas](mailto:av@andrasvargas.com) Front End Developer

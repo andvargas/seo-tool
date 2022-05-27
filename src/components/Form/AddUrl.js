@@ -13,7 +13,7 @@ const AddUrl = (props) => {
   const trimHandler = (event) => {
     event.preventDefault();
     setShortenedUrl(
-      enteredUrl.substring(enteredUrl.lastIndexOf("/") + 1, 75 - baseUrl.length)
+      enteredUrl.substring(enteredUrl.lastIndexOf("/") + 1, 74 - baseUrl.length)
     );
   };
 
