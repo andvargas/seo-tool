@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <Wrapper>
       <p>
-        Powered by Andras | <a href="https://floatingpint/#">Andras Vargyas</a>
+        Powered by <a href="https://floatingpint.com/#">Andras Vargyas</a>
         <br />
         <a className="red" href="mailto:andreas@shopfacade.com?subject=Bug detected on SEO tool">
           report bug
