@@ -24,9 +24,10 @@ The Title tester is measuring the element's width in pixels, this is more accura
 
 The Meta Description tool is similar to the title tester, also measures the length in pixels, giving a red notice if the description is too short or too long. Both tools have a copy button, which copies the values of the field to clipboard, making it easy to paste into place.
 
-## Backend
+## Frontend
 
-The SPA is hosted on a Ubuntu/Apache2 server at AWS, with multiple websites on it, all configured and set up be myself. For source control I use Github, the repository link: [github.com/andvargas/seo-tool](https://github.com/andvargas/seo-tool).
+From 8 Nov 2024 the app is hosted on Netlify, imported manually fron Github, on the subdomain seo.webtechsupport.co.uk
+The SPA was previously hosted on a Ubuntu/Apache2 server at AWS, with multiple websites on it, all configured and set up be myself. For source control I use Github, the repository link: [github.com/andvargas/seo-tool](https://github.com/andvargas/seo-tool).
 The single page app doesn't have a database connection, no data is being stored.
 
 ## Version 0.1.1
